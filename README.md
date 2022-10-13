@@ -1,2 +1,2 @@
-# C
-exercise of C
+# javascript
+exercise of javascript
