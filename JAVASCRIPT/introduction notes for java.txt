@@ -1,0 +1,92 @@
+java script toturial.
+
+basic introduction for javascript. basically java is programing launguage of hdml and lan. there are three main elements. the first is HVM which stands for hypertext markup language.and it is used generally for display the content  on a page. the second most important component of all is CSS, and it stand for cascading styles sheets. usually use to define the layout of the page is most essintial component. which help the site be more interactive.
+NEED TO know javaspcript is an interpeter programing laugauge. which means its compiled by a web browser. so its discarded as interpreted launguage.
+
+prerequisites-
+basic knowledge of HTML tags.
+basic knowledge of HTML forms.
+
+
+* after you write a tag you can type code only between those tags,and only after you type
+<TYPE>.
+
+NOW we are going to find out what are COMMAND and what are STATEMENTS.
+COMMAMD is basically line of code which intsruct the computer to preform some action.
+for example. alert command is a type of swhich the outcome of it is a pop up ad in the web browser. and STATEMENNT is what the line which will display on your computer from your command. 
+if you want to distinguish between a statement and a command because the browser cannot identify those if we dont write it down.  without two slash at the start- //. which turn the line into green which mean its now a command.
+
+So that's how you add a simple single line comment to your call.
+
+Now what if you have a paragraph of Eckstein you want to come into it.
+
+So for example I'll just copy those lines and paste it over here.
+
+So let's say you have a four lane paragraph lawyer.
+
+Now it is very inefficient to simply go on auditing these these type of slashes right before each and
+
+every line.
+
+So it becomes a devious job.
+
+So in order to comment a whole bunch of paragraph there is a simple matter.
+
+So you go under the first line and before the first line you use slash then we will start.
+
+Then go to your ending line and simply a start and slash again.
+
+So whatever comes in between these symbols is going to be your comment and it is going to be completely
+
+ignored by a web browser.
+
+VARIABLES- Can be some sort of value in those variables. But in javascript before using variables we need to declare certain variable.
+
+
+Of course there are diffrent types of variables. for example;
+VAR X = 10.45645; // DECIMAL VARIABLE.
+VAR NAME ="NOTEPAD"; //STRING VARIABLE.
+VAR Y = FALSE;    // BOOLEAN VARIABLE.
+VAR B = NULL; // NULL VARIABLE( does not necessarily.
+
+So basically we have declared this to really it was the first video well is a string variable which
+is used to store the value EBC or the name and the next variable is the age variable which is used to
+store the value 30.
+And you would also declare 30 without these brackets.
+And that is because we could store the integer value in a variable without using double corks.
+Are you if you say the program now an exit unit on a browser.
+You are going to get the same result as before.
+
+USING FUNCTION IN JAVASCRIPT-
+Now once you are declared the function the next thing which you need to do is you need to call the function.
+So in order to call a function you simply use the function name then a parentheses and after the parentheses
+you end the statement by using a semi-colon.
+So that's what a function declaration in a function call is.
+
+
+FOR LOOP-
+* </br> basic html tag which used to break the format down a line.
+
+
+FOR LOOP & WHILE LOOP
+So the basic syntax of while loop is different from a for loop.
+So in a for loop we had these three conditions which was the initialization the condition checking as
+well as the increment or decrement operation inside the single loop MARTIN While loop we only have conditional
+checking.
+So that's it for this deal and I hope you understood why loops are.
+So basically while loops and for loops are used for one and the same function that is repeating a set
+of code.
+The only difference between a loop and for loop is that the basic syntax for creating both of them are
+different and for loop we have three conditions or three statements inside the parameter section and
+involute we have only one statement which is the condition checking or conditional statement which sets
+the condition and depending upon that condition it is going to execute or it is going to look to this
+call.
+
+event handling-
+event first of all is whem you hover your mouse over option in an website for example:
+basiclly clicking a button, how is it get click and what is the pre effect of it.just 
+a simple action of how it is clicked.
+an example for basic event handler
+
+ <input type="button"value=" Click Me" onclick="alert('You have clicked the button');"/>	
+	 
