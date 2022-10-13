@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+     int randomNumber=0;
+     int guess=0;
+     int numberOfGuesses=5;
+     time_t t;
+
+     srand((unsigned)time(&time));
+     randomNumber = rand () %21;
+     printf("\nthis is a guessing game.");
+     printf("\ni have chosen a number between 0 and 20, which you must guess.\n");
+
+     for(numberOfGuesses=5;numberOfGuesses>0;--numberOfGuesses)
+     {
+     printf("\nyou have %d tr%s left",numberOfGuesses,numberOfGuesses==1?"y":"ies");
+     printf("\nEnter a guess:");
+     scanf("%d,&guess");
+
+     if(guess==randomNumber)
+     {
+          printf("\nlucky guess!");
+          return;
+     }
+     else if(guess<0 || guess>20)
+          printf("i said the number is between 0 and20\n");
+     else if (randomNumber>guess)
+          printf("wrong, %d is not correct. the number is higher than that\n",guess);
+     else if (randomNumber<guess)
+          printf("wrong,%d is not correct,the number is lower than that.\n");
+     }
+          printf("\nyou have had five tries and failed. the number was %d\n",randomNumber);
+return 0;
+}
+     
+ 
+
+ 

@@ -1,0 +1,78 @@
+you alrady know that character string is a char array terminated with a null character(\0)
+character string are commonly used
+C provides many functions specifically designed to work with strings
+
+some of the more commonly preformed operations on characters strings inclde
+getting the length of a string 
+strlen
+copying one character string to another
+strcpy() and strncpy()
+comaining two characters string toghther concatetion
+strcat() and strncat()
+determing if two characters string are equal
+
+
+geting the length of a string
+
+the strlen()function finds the length of a string
+returned as size_t
+
+include<stdio.h>
+#include<string.h>
+ int main()
+{
+char myString[]="my string";
+pritnf("the length of this string is %d",strlen(myString));
+return 0;
+}
+the function does not change the string
+the function header doesnnot use const in declaring the formal parameters string
+
+copying string 
+
+since you cannot assign arrays in C you cannot assign strings either
+
+chars[100];//declare
+s="hello";//initialize DOESNT WORK (value required error)
+
+you can use the strcpy() function to copy to an exsinsting string the sting 
+equivalent of the assigment operator
+
+char src[50], dest[50];
+
+strcpy(src, "this is source");
+
+strcpy(dest,"this is destenation")
+
+the strcpy() function does not check to see whether the source string actually fits in the target string
+safer way to copy strings is to use strcpy()
+
+strcpy() takes a third argument
+the maximum number of characters to copy
+
+char src[40];
+char[12];
+
+memset(dest,'\0',sizeof(dest));
+strcpy(src,"hello how are you doing");
+strncpy(dest,src,10);
+
+example
+#include <string.h>
+
+int main()
+{
+     char myString[]="My name is jason";
+     printf("the length is %d", strlen(myString));
+     return 0;
+}
+
+the strcat() function takes two strings for arguments
+a copy of the second string is tacked onto the end of the first
+this combined version becomes the new first string
+the second string is altered
+
+the strcat()function takes two string for argument
+a copy of the second string is tacked.
+
+the strcat() does not 

@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+     int randomNumber = 0;
+     int enteredNumber = 0;
+     int maxGuess = 5;
+     time_t t;
+
+     srand((unsigned) time(&t));
+     randomNumber = rand() % 21;
+
+     for(int i = 0; i<maxGuess ; ++i)
+          {
+               printf(" please enter lucky number:\n");
+               scanf("%d", &enteredNumber);
+
+               if (enteredNumber>20)
+               {
+                    printf(" please enter the right number!\n");
+               } 
+               else if(randomNumber<enteredNumber)
+               {
+                    printf(" sorry your number is too high!\n");
+               }
+               else if (randomNumber>enteredNumber)
+               {
+                    printf(" sorry your number us too low!\n");
+               }
+               else if (randomNumber==enteredNumber)
+               {
+                    printf(" congratulation! you win!\n");
+                    break;
+               }
+
+          }
+
+     return 0;
+}
+
+     
+ 
+
+ 

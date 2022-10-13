@@ -1,0 +1,31 @@
+A string constat or string literal is a sequence of chracters or symbols betwwen a pair of double qute charaters
+anything between a  pair of double quotes is interpeted by the compiler as a string.
+includes any special charaters and embedded spaces.
+anything in doublue quotes is a string.which is a  text.
+every time you have displayed a message using the printf function you have defined the 
+message as a string
+
+understand the difference between single qutation and double quotation marks.
+both are used to create two different type of constants in C
+single quotes for characters
+double quotes for strings
+for the third example above you must specify a double quote within a string as the escape sequence.
+the compiler will interpret an explicit double quotes without preceding backslash as a string delimiter
+
+null charater 
+a special character with the code value 0 is added to the end of each string to mark where it ends
+this charater is known as the null charater and you write it as \0
+a string is always terminated by a null charater,so the length of a string is always one greater than a number of charaters strings
+example
+int main(void)
+{
+printf("the charater \ is used to terminate a string");
+
+}
+
+if you compile and run this program you will get this output:
+the character
+the only first part if the string has been displayed 
+outouts ends after the fist two word because the function stops outputting the string 
+when it reaches it first null charater
+the second \0 art the end of the string will never be reachred 

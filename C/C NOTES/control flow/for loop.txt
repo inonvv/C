@@ -1,0 +1,53 @@
+for loop
+you typically use for loop to execute a block of statement a given number of times
+if you want to display the numbers from 1 to 10 intead of writing ten statements that call printf(),
+you would use a for loop.
+
+for(int count = 1 ; count<=10 ; ++count)
+{
+printf("%d",count)
+}
+
+example of jump by 2-
+ for(int count=0; count<=200; count=count+2)
+          printf("%d\n",count);
+     return 0;
+
+the for loop operation is controlled by what apears between the parentheses that follow the keyword for 
+the three control expression that are separated by semicolons control the operation of the loop.
+
+the action that ypu want to repeat each time the loop repeats is the block containing the statement that call printf()
+(body of the loop)
+for single statement, you can omit the braces.
+
+general pattern for the for loop is:
+for (starting_condition;continuation_condition ; action_per_iteration)
+loop_statement;
+
+the statement to be repeated is represened by loop_statement
+could equally well be a block of several statement enclosed between braces
+
+the starting_condition usually(but not always)sets an initial value to a loop control variable
+the loop control variable is typically a counter of some kind that tracks how often the loop has been repeated
+can also declare and initialze several variables of the same type here with declarations
+separated by commas
+variables will be local to the loop and will not exist once the loop ends.
+
+
+for(starting_condition; continuation_contidion; action_per_iteration)
+loop_statement;
+ the continuation_condition is a logical expression evaluating to true of false
+determines whether the loop should continue to be executed
+as long as this condition has the value true, the loop continues
+typically checks the value of the loop control variable
+you can put any logical or arithmatic expression here as long as you know what you are doing.
+
+infinite loop
+for(;;)
+{
+/*statement*/
+}
+the condition for continuing the loop is absent,the loop will continue indefinitely.
+sometimes useful for monotiring data or listening for connections.
+
+

@@ -1,0 +1,97 @@
+its very common to store in a program many data values of specified type
+in a sportd program, you might want to store the scores for all games or the score for each player.
+you could write a program that does this using a different variable foe each score.
+if there are a lot of games to store then this is very tedious
+using an array will solve this problem.
+
+arrays allow you to group values together under a single name.
+you do not need to separate variables for each item of data.
+an array is fixed number of data items that are all of the same type.
+you cant store miultiple types of data. for example if you store an int in an array then only
+int can be stored there nothing else.
+
+how declaring an array?
+*the data items in an array are referred to as elements.
+the elements in an array have to be the same type(int,long,double,etc)
+*you cant mix data types no such this as a single array of ints and double!
+
+declaring to use an array in a program is similar to a normal variable that contains a single value
+difference is that you need a number between square brackes[]following the name
+
+example
+long number[10];
+this just saying were creating an array named numbers of type long that contain 10 elements
+the number between square brackes defines how may elements the array contains
+called the size of the array or the array dimention.
+
+each of the data item stored in an array is accessed by the same name
+you select a particular element by using an index (subscript)value between square brackes following the array name
+
+index values are sequential integers that start from zero
+index values for elements in an array of size 10 would be from 0-9
+arrays are are zero based
+0 is the index value for the first array element
+for an array of 10 elements index value 9 refers to the last element
+
+it is a very common mistake to assume that array start from one
+referred to as the off by one error.
+you can use a simple integer to explicity reference the element that you want to access .
+to access the fourth value in an array, you use the expression arrayname[3]
+
+you can also specify an index for an array element by an expression in the square brackes following the array name.
+the experssion must result in an integer value that corresponds to one of the possible index values
+it is very common to use a loop access each element in an array
+
+for (i=0; i<10; ++i)
+printf("number is %d", numbers[i]);
+
+if you use an expression or a variable fo an index value that is outside the range for the array,
+your program  may crush or the array can contain garbage data
+referred to as an out of bounds error.
+very important to ensure that your array indexes are always within bounds.
+a value can be stored in an array of an array simply by specifying the array element on the left side of an equal sigh.
+grades[100]=95;
+the value 95 is stored in element number 100 of the grades array.
+can also use variables to assign values to an array
+example
+
+int main()
+{
+int grades[10];  //array storing 10 values
+int count=10;    // number of values to be read
+long sum=0;    // sum of the numbers
+float average =0.0f; // average of the numbers
+
+printf("\nEnter the 10 grades:\n"); // prompt for the input
+
+//read the ten numbers to be averaged          
+for(int i=0;i<count;++i)                        	
+{
+printf("%2u>",+1);
+scanf("%d",&grades[i]);     //read the grade    
+sum+=grades[i]             // add to sum
+}
+average=(float)sum/count;
+printf("\naverage of the ten grades entered is:%.2f\n"avarage);
+{
+return0;
+}
+
+another example
+{
+     int grades[10];
+     int count = 10;
+     long sum = 0;
+     float average =0.0f
+      printf("enter here\n");
+     int i;
+     for (int i = 0 ; i < count; ++i)
+     {
+          printf("%2u>",i+1);
+          scanf("%d", &grades[i]);
+          sum += (float)grades [i];
+     }     
+
+
+return 0;
+}

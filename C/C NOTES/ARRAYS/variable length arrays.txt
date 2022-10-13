@@ -1,0 +1,6 @@
+so far,all of the size arrays have been specified using a number.
+the term variable in variable-length array does not mean that you can modify the length of the array,
+after you create it.
+a VLA keeps the same size after creation.
+VLA-allow you to specify the size of an array with a variable when creating an array.
+making it easy to existing libraries of fortan numerical calculation routines to c

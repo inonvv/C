@@ -1,0 +1,76 @@
+c has no special variable type for strings
+this means there are no special operators in the language for processing strings
+the standard library proviedes an extensive range of functions to handle strings.
+strings in c are stored in an array of type char charaters in string are stored in adjacent memory cell.one character per cell.
+to declare a string in C simply use the char type and the brackes to indicate the size
+char myString[20];
+this variable can accommodate a string that contains up to19 characters
+you must allow one element for the termination character.
+when you specify the dimension of an array that you intend to use to store string
+you can initialize a string variable when you declare it
+char word[]={'H','e','l','l','o','!'};
+to initialze a string, it is the same as any other array.
+initialization
+in the absence of a particular array size, the C compiler automatically computes the number of elements in the array
+based upon the number of initalizers.
+this statement reserve space in memory for exacly.
+seven characters
+automatically add the null terminator.
+ypu can specify the size of the string explicitly just make sure you leave enough space for the terminating null character
+charword[7]={"hello"};
+if the size specified is too small then the compiler cant fit a terminating null character at the end of the array and it doesnt put one there 
+so do not spefify the size of an array of elements of type char with a string.
+ since you can not assign array in C you can not assign strings either
+fot the folowing is an  error:
+char s[100];//declare
+s="hello";// initialze DOESNT work (value required error)
+you are preforming as assiggment operation,and you cannot assign once array of charaters of another array
+of characters like this 
+ypu have to use strncpy() to assign a value to a char array after it has been  declared or initialzed
+HERE IS RIGHT::
+s[0]="h";
+s[1]="e";
+s[2]="i";
+s[3]="l";
+s[4]="0";
+s[5]="\0";
+
+the %s format specifier is for outputting a null terminated string
+ to input a string via the keyboard use the scanf function
+char input[10];
+printf("please input your name:");
+scanf("%s",input);
+the %s format specifier is for inputting string
+no need to use the & address of operator in a  string
+
+you cannnot directly test two string to see if they are qual with statement such as if(string1==string2)
+the equality operator can only be apllied to simple variable types such as float ints or chars
+does not work on structures or arrays
+to determinr if two string are equal you must explicitly compare the two characters strings characters by character
+we will discuss as eaiser way with strcmp function
+
+REMINDER
+the string constant "x" is not the same as the character constant 'x'
+'x' is a basic type char
+"x" is a derived type an array of char
+"x" really consist of two characters 'x' and'\0' n the null number.
+
+#include <stdio.h>
+int main(void)
+{
+char str1[]="to be or not to be";
+char str2[]=",that is the quastion";
+unsigned int count =0; //stores the string length
+while(str1[count]!='\0') // increment count till we reach the 
++++count;               //terminating character.
+
+printf("the length of the string \"%s\" is %d characters.\",str1,count);
+
+count=0;  // reset count for next string
+while str2[count]!='\0') //count characters in seconf string
+++count;
+
+
+printf("the length of the string \"%s\" is %d characters.\n",str2,count);
+return 0;
+}

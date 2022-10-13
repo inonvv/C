@@ -1,0 +1,32 @@
+sometimes you need to use a constant in a program
+circumference=3.14159*diameter;
+the constant 3.14159 represent the world famous constant pi.
+there are good reasons to use symbolic constant instead of just typing in the number a name tell you more than numbe does
+if you read through a long program the meanning of the second version is plainer.
+suppose you have used a constant in several places and it becomes necessary to change its value
+you only need to alter the defenition of the symbolic constant rather than find and change every occurence of the constant in the program
+
+
+the prepocessor let you define constants
+when your program is compiled the value 0.015 will be substituted everywhere you have  use TAXRATE.
+compile time substitution
+a defined name is not a variable
+you cannot assign a value to it 
+notice that #define statement has special syntax 
+no equal sigh used to assigh the value 0.015 to TAXRATE
+no semicolon.
+
+define statemnet can appear anywhere in program 
+nosuch thing as local define
+most programmees groups their #define statement at the beginning of the program(or inside an include file)
+where they can be quickly referenced and shared by more than one source file
+
+the#define statement helps to make programs more portable.
+it might be necessary to use constant values that are related to the particular computer in which the program is running.
+
+the define statement can be used for characters and string constants
+
+#define BEEP '\a';
+define TEE 'T'
+#define ESC '\033'
+define OOPS "now you have done it"

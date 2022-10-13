@@ -1,0 +1,60 @@
+couwhile loop while loop 
+the mechanism for repeating a set of statement allows execution to continue for as long as 
+specified logical experssion evaluates to true.
+
+
+while the condition is true                                     while you are hungry
+keep on doing this                         OR                   eat some sandwiches
+
+
+the general syntax for the while loop is as follows(one statement in body):
+ while(expression)             or                    while(expression)
+  statement1;                                         {
+                    					statement1;
+							statement2;
+						      }
+
+
+
+
+the condition for continuation of the while loop is tested at the start (top of the loop)
+pre test the loop
+
+if the expression start out false, none of the loop statement will be executed
+if you answer the first question "no im not hungry", then you dont get to eat any sandwitches at all.
+and you move straight to the coffee.
+
+if the loop condition start out as true, the loop body must contain a mechanism for changing this if 
+the loop is to end.
+
+in the while loop the body is executed while the condition is true.
+
+the do while loop- 
+a loop where  the body is executed for the first time unconditionally
+ always guranteed to executed at least once
+condition is at the bottom (post test loop).
+after initial execution the body is only executed while the condition is true.
+
+do                                                do
+   statement                                    {
+  while(expression);                              prompt for password
+ 						  read user input
+						}while (input not equal to password);
+
+
+which loop to use ?
+first,decide whether you need an pre or post test loop.
+usually will be a pre test loop (for or while), a bit better option in most cases
+it is better to look before you leap (or loop) than after
+easier to read if the loop test is found at the beginning of the loop
+in many uses, it is important that loop be skipped entirely if the test is not initially met
+
+so should you use a for or a while?
+a matter of taste because what you can do with one, you can do with the other
+to make a for loop like a while you can omit the first and third expressions
+
+
+
+*a for loop appropriate when the loop involves initializing and updating variable.
+*a while loop is better when the condition are otherwise.
+* usually(i) use the while loop for logic controlled loops and for loop for counter controlled loops

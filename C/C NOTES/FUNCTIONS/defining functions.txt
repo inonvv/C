@@ -1,0 +1,59 @@
+when you create a function you specify the function header as the first line of the function defenition
+followed by starting a curly brace{}
+the executable code between the starting and ending braces
+the block of code between braces following the function header is called the function body
+the function header defines the names of the function parameters which
+ specify the number and types of values that passed to the function when its called.
+the type of the value that the function returns.
+the function body contains the statements that are executed when the function is called
+have to access to any values that are passed as the arguments to the function
+example
+return_type function_name(parameters-separated by commas)
+{
+ //statement
+}
+the first line of a function definition tells the compiler(in order from  lest to right) three thing about the function
+the type of value it returns
+its name
+the argument it takes
+
+choosing meaningful function names is just as important as choosing meaningful variable names
+greatly affects the programs readability
+
+example
+void printMessage(void)
+{
+printf("programming is fun.\n");
+}
+
+FUNCTION PROTOTYPE
+a function prototype is a statement that deifnes a funciton 
+defines its name its return value type and the type of each of its parameters
+provide all the external specifications for the function.
+ a funciton prototype enables the compieler to generate the appropriate instructions at each point where you call the function
+it also checks that you are using the function correctly in each invocation
+when you include a standard header file in a program the header files adds the function prototypes
+for the library to your program
+ghd header file stdio.h contions function prototypes for printf among others.
+generally apears at the beginning of a source file prior to the implementations of any functions or in a header file
+ allow any of the function in the file to call any function regardless of where you have placed the
+implementation of the function
+parameters names do not have to be same as those used in the function defenition
+not required to include the names of the parameters in function prototypes
+*its good practice to always include declarations for all the function un a program source file,
+regardless of where they are called.
+will help you keep ypur programs more consistent in design
+prevent any errors from ocurring if, at any stage you choose to call a function from another part of your program
+
+example
+#include & #define directives
+function prototypes
+double Average(double data_values[],size_t count();
+size_t GetData(double*,size_t)
+double sum(double*x,size_t n);
+
+int main()
+{
+code in main()..
+}
+definitions/implementions fir average90,sum(),and getdata()

@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    //display byte size of data types,int,char,long 
+    //long long,double, long double.(%zd).
+    // &and , |or , ^at least one 
+    
+
+
+
+    printf("display data: int %zd\n",__SIZEOF_INT__);
+    printf("display data: long %zd\n",__SIZEOF_LONG__);
+    printf("display data: long long %zd\n",__SIZEOF_LONG_LONG__);
+    printf("display data: short %zd\n",__SIZEOF_SHORT__);
+    printf("display data: float %zd\n",__SIZEOF_FLOAT__);
+   
+
+    
+    return 0; 
+}

@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define PAYRATE 12.00
+#define EXTRAHOUR 1.5
+#define TAXERATE_300 0.15
+#define TAXERATE_150 0.20
+#define TAXERATE_REST 0.25
+#define OVERTIME 40
+
+int main()
+{
+  int hours =0 ;
+  int extraHours = 0;
+  int grossPay = 0 ;
+  int taxes =0 ;
+  int netPay =0;
+
+  printf("please enter ammount of hours:");
+  scanf("%d",&hours);
+
+  if(hours<=40)
+    grossPay =  hours * PAYRATE;
+
+  else if(hours>40) 
+    {
+      extraHours = hours - OVERTIME;
+      grossPay = 40 * PAYRATE;
+      grossPay = grossPay + extraHours * (PAYRATE * EXTRAHOUR);
+    }
+
+  if (grossPay<=300)
+  {
+    taxes = grossPay * TAXERATE_300;
+  }
+  
+  
+   else if(grossPay>300&&grossPay<=450)
+    {
+      taxes = (grossPay - 300) * TAXERATE_150 + (300 * TAXERATE_300);
+    }
+  else if (grossPay>450)
+      {
+        taxes = (TAXERATE_300*300)+(TAXERATE_150*150)+((grossPay- 450) * TAXERATE_REST);
+      }
+  netPay= grossPay - taxes;
+      printf("grossPay is:");
+      printf("%d\n",grossPay);
+      printf("taxes is:");
+      printf("%d\n",taxes);
+      printf("netpay is:");
+      printf("%d\n",netPay);
+
+  return 0;
+
+}  

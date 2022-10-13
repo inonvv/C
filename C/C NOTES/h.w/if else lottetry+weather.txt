@@ -1,0 +1,20 @@
+ #include  <stdio.h>
+ int main()
+  {
+    int score = 95;
+    int big = 90;
+    int lottery_number;
+
+    printf("enter your lottery number:");
+    scanf("%i",&lottery_number);
+
+    lottery_number == score - big  ;
+
+    if(lottery_number>score)
+     printf("jackopt! you win.\n");
+   else
+    printf("YOU LOSE!.\n"); 
+         
+    return 0;
+ }
+ 

@@ -1,0 +1,43 @@
+a parameter is variable in a function declaration and function definition/implementation.
+
+when  a function is called the argumnets are the data you pass into the function parameters.
+the actual value of a variable that gets passed to the function.
+
+function parameters are defined within the funcion header
+are placeholders for arguments that need to be specified when the function is called
+
+the parameters for a function are a list of parameters names with their types each parameter is separated 
+by a comma.
+entire list of parameters is enclosed betwenn the parantheses thta follow the function name.
+a function can have no parameters, in which case you should put void between the parentheses.
+parameters provide the means to pass data to a function
+data passed fro, calling function to the funcion that is called
+the names of the parameters are local to the function they will assume the values of the 
+arguments that are passed when the function is called.
+the body of the function should use these parameters in its implementation.
+a function body may have additional locally defined variables that are needed by the functions implemetataion.
+when the prinf() function  is called, you always supply one or more values as arguments 
+first value being the format string
+the remaining values being any variables to displayed
+parameterrs greatly increase the usefulness and the flexibility of a function 
+the printf() function displays whatever you tell it to display via parameters and arguments passed
+its a good  idea to add comments before each of your own function definitions
+help explain what the function does and how the arguments are to be used.
+
+example
+#include<stdio.h>
+
+void multiplyTwoNumbers(int x,int y)
+{
+  int result=x*y;
+  printf("the product of %d multiplied by %d is:\n",x,y,result);
+}
+
+int main(void)
+{
+ multiplyTwoNumbers(10,20)
+ multiplyTwoNumbers(20,30);
+ multiplyTwoNumbers(50,2);
+
+return 0;
+}

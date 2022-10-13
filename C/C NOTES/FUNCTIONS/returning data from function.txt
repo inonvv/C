@@ -1,0 +1,50 @@
+you might  not always want to have the results of your calculations displayed.
+functions can return data using specific syntax
+sould be familiar from previous experience with the main function
+
+return_type Function_name(list if parameters-separated by commas)
+{
+statements
+}
+the return_type specifies the type of the value returned by the function
+as any of the ;ega; types in C 
+include enumeration types and pointers
+the return can also be type void which means no value is returned
+the return statement provieds the means of the existing from function return;
+this from of return statement is used exclusively in a function where the return type has been declared as void
+does not return a value
+the more general form of the return statement is
+return expression
+this form of return satement must be used whenthe return value type for the funvtion has been declared as some type 
+other than void
+ 
+invoking function
+you call a function by using the function name followed by the arguments to the function between parentheses.
+when you call the function the values of the arguments that you specify in the call will be assigned to the parameters in the function
+when the function executes thr computation proceeds using the values you supplied as arguments.
+the arguments you specify when you call a function should agree in type, number, and sequence with the parameters in the function header.
+
+invoking a function and assigning data returnted
+if the function is used as the right side of an assignment statement,the return value supplied by 
+the function will be substituted for the function
+will also work with an expression.
+
+int x= mYfunctioncall();
+the calling function doesnt have to recognize or process the value returend from a called function
+up to you how you use any values returned from function calls.
+
+example of invoking data to a function:
+
+int multiplyTwoNumbers(int x, int y)
+{
+ int result=x*y;
+ return result
+}
+int main (void)
+{
+ int result=0;
+ result= multiplyTwoNumbers(10,20);
+
+ printf("result is %D\n",result);
+ return 0;
+}

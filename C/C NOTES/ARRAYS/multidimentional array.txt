@@ -1,0 +1,84 @@
+the types of arrays that you have been exposed to so far are all linear arrays
+* as single dimension 
+the C launguage allows arrays of any dimension to be defiend.
+two dimensional arrays are most common.
+you can visualize a two dimentional array as rectangular arrangement like rows and columms un a spreadsheet.
+one of the  natural application for a two dimentional array arises in the case of matrix.
+two dimensional arrays are declared the same way as one dimensional array are.
+int matrix[4][5];
+
+declares the array matrix to be a two dimensional array consisting of 4 rows and 5 columms,for a total of 20 elements
+note how each dimension is between its own pair of square brackes.
+
+two dimensional arrays can be initialized in the same manner if a one dimensional array.
+when listing element for initialization, the values are listed by row.
+the difference is that you put the initial values for each row between braces,{}and then enclose all the rows between braces.
+
+int numbers[3][4]={
+	{10,20,30,40}
+	{15,25,35,45}
+	{47,48,49,50}
+};
+**commas are required after each brace that closes off a row,except in the case of the final row.
+the use of inne pairs of braces is actually optional,but, should be used for readability.
+
+initializing a 2d array
+as with one dimentional arrays it is not required that the entire array be initialzed
+int matrix[4][5]={
+		{10,5,-3},
+		{9,0,0},
+		{32,20,1},
+		{0,0,8}
+		}
+
+only initializes the first three elements of each row of the matrix to the indicated values
+remaining values are set to 0
+in this case the inner pairs of braces are required to force the correct initialization. used i
+
+subscripts can also be used in the initialization list, in a like manner to single-dimensional arrays
+
+int matrix[4][3]= {[0][0]=1,[1][1]=5,[2][2]=9};
+
+initia;izes the three indicates elements of matrix to be specified values 
+unspecified element are set to zero by default 
+each set of values that initializes the elements in a row is between braces
+the values for a row are separated by commas
+each set of row values is separated from the next set by a comma.
+
+other dimensions
+basically everything that we talk about in two dimension is also in other like three or four dimensional.
+example
+int box[10][20][30]
+
+
+initializing an array if more than 2 dimensions
+for array of three or more dimensions, the process of initialization is extented
+a three dimensional array will have three levels of nested braces. with the inner level containing sets of intializating
+values for a row.
+example
+
+int number[2][3][4]={  			/// first block of code
+			{10,20,30,40}
+			{15,25,35,45}
+			{47,48,49,50}
+		     },
+		     {
+			{10,20,30,40}
+			{15,25,35,45}
+		     }
+		    };
+
+
+processing elements in an dimensional array
+ you need a nested loop to process all the elements in a multidemensional array
+the level of nesting will be the number of array dimensions
+each loop iterates over one array dimension.
+
+
+int sum =0;
+for(int i=0; i<2; ++i)
+
+
+
+
+

@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+int main()
+{
+     int desiredNum;
+     int numBefore= desiredNum -1;
+     int sum =0;
+
+     printf("enter your number:");
+     scanf("%d",&desiredNum);
+//practice of for loop
+     for(int count =desiredNum; count>0; --count)
+     {
+          printf("%d,",count);
+          sum=sum+count;
+     }
+
+     printf("\nthis is the sum: %d",sum);
+
+     return 0;
+
+}
+
+     
+ 
+
+ 

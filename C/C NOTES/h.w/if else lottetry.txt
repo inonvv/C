@@ -1,0 +1,93 @@
+int score = 95;
+    int frenheit_high = 85;
+    int frenheit_low = 50;
+    int perfect_weather ;
+    int lottery_number;
+
+    printf("enter your lottery number:");
+    scanf("%i",&lottery_number);
+
+    
+
+    if(lottery_number>=score)
+      printf("jackopt! you win.\n");
+    else
+      printf("YOU LOSE!.\n"); 
+
+    
+    printf("enter weather likebility:");
+    scanf("%i",&perfect_weather);
+    if(frenheit_high<perfect_weather)
+    {
+      printf("scorching hot today!");
+    }
+    else if(frenheit_high>=perfect_weather && frenheit_low<=perfect_weather)
+    {
+      printf("perfect weather!");
+    } 
+    else
+    {
+      printf("freezing cold today!");
+    }
+    return 0;
+ }
+  double hourlypay = 12.00;
+   int days = 7;
+   double hoursAday ;
+   double salary;
+  
+   
+   printf("enter houres: ");
+   scanf("%d",&hoursAday);
+   
+   salary = days * (hourlypay * hoursAday);
+   printf("%d week payment\n", salary);
+
+  
+      if ()
+         {
+          printf("overtime!");
+         }
+
+
+
+
+ #include  <stdio.h>
+ int main()
+ {
+    double hourlypay = 12.00;
+    int days = 7;
+    double hoursAday ;
+    double salary;
+    double overtime ;
+    
+    printf("enter houres: ");
+    scanf("%d",&hoursAday);
+    overtime = 
+    salary = days * (hourlypay * hoursAday);
+    printf("%d week payment\n", salary);
+
+      if(hoursAday<=40)
+      {
+        
+        printf("overtime!");
+      }
+  
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   return 0;
+ }

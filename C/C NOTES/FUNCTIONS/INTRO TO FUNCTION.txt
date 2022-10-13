@@ -1,0 +1,54 @@
+a function is a self cointained unit of program code desogned to accomplish a particular task
+syntax rules define the structure if function and how it can be used.
+function in C is the same as subortines or procedures in other programming languages
+some function cause an action to take place like printf or scanf two differce action.
+some functions find a value for program to use strlen() tells a program how long a certain string is.
+advatages of functions
+allow for the divide and conquer strategy 
+it is very difficult to write an entire program as a single large main function
+difficult to test debug and maintain.
+with divide and conquer tasks can be divied into several independent subtasks
+reduce the overall complexity
+separate function are written for each subtask.
+we can further divide each subtask into smaller subtasks further reducing the complexity.
+reduce duplication of code
+save you time when writing testing and debugging code
+reduces the size of the source code 
+if you have to do a certain task several times in a program you only need to write an appropriate function once
+program can then use that function wherever needed
+you can also use the same function un diffenrent program.
+help with readability
+is better orginazed 
+easier to fix and change
+the divide and conquer approach also the parts of program to be developed tested, and debugged independently
+reduce the iverall development time
+ the function developed for one program can be used un another program
+software reuse
+many programmers like to think of a function as a black box
+information that goes in
+the value or action it produces
+
+uisng the black box thinking helps you concentrate on the program overall design rather than the details 
+what the function should fo and how it relates to the programas a whole
+
+example
+#define SIZE50
+int main()
+{
+  float list[size]
+  readlist(list,SIZE);
+  sort(list,SIZE);
+  average(list,SIZE);
+  return 0;
+}
+
+implemeting function
+rememner just calling functions does not work unless we implement the function itself.
+user defined function
+we would have to write the code for the three functions readlist(),sort(),and average() in our previous examples
+always use descriptive function names to make it clear what the program does and how it is organized
+if you can make the function general enough you can reuse them in other programs
+ we will understad how to
+difine functions
+invoke functions
+how to pass and return data from them

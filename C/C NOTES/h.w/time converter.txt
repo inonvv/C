@@ -1,0 +1,13 @@
+ int minutesEntered ;
+    double days = 0;
+    double years = 0;
+    double minutesInYear = 0;
+
+    printf("Enter here number of minutes: ");
+    scanf("%d", &minutesEntered);
+    
+    minutesInYear = (60 *24 *365);
+    years = (minutesEntered / minutesInYear);
+    days = (minutesEntered / 60 / 24);
+    
+    printf("%d minutes is approximately %.0f years and %.0f days\n", minutesEntered, years, days);
